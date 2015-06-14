@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Logo Quiz</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/quiz-style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- JavaScript -->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="js/quiz-script.js"></script>	
+</head>
+<body>
+	<div class="wrapper">
+
+		<header>
+			<a class="restart-btn"><div>RE-START QUIZ</div></a>
+		</header>
+
+		<div class="main">
+
+			<div class="intro">
+				<h1>So you think you know your web design + dev tools?</h1>
+				<p>Here's the real test... can you recognize all their LOGOS??</p>
+				<button class="btn-start">START QUIZ</button>
+			</div><!--end intro-->
+
+			<div class="question-box">
+				<div class="logo"></div>
+				<div class="progress">--{ </div>
+			</div>
+
+			<div class="answer-box">
+				<div class="feedback"></div>
+				<div class="answers">
+				<ul class="answer-list">
+					<li class="answer1">
+						<input type="radio" id="a1" name="answer" value="A" />
+						
+					</li>
+					<li class="answer2">
+						<input type="radio" id="a2" name="answer" value="B" />
+						
+					</li>
+					<li class="answer3">
+						<input type="radio" id="a3" name="answer" value="C" />
+						
+					</li>
+					<li class="answer4">
+						<input type="radio" id="a4" name="answer" value="D" />
+						
+					</li>
+
+				</ul>
+					<!--<ul>
+						<a><li>Answer 1</li></a>
+						<a><li>Answer 1</li></a>
+						<a><li>Answer 1</li></a>
+						<a><li>Answer 1</li></a>
+					</ul>-->
+				</div>
+				<div>
+					<button class="btn-next">NEXT LOGO <i class="fa fa-arrow-right"></i></button>
+				</div>
+
+			</div><!--end answer box-->
+
+			<div class="score-box">
+				YOUR FINAL SCORE:<br /><span class="score"></span>
+			</div>
+
+
+		</div><!--end main-->
+		<div class="push"></div>
+
+	</div><!--end wrapper-->
+			<div class="footer">
+			<p>A little interactive quiz by Sharon Austin, June 2015.</p>
+		</div>
+
+	
+</body>
+</html>

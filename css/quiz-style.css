@@ -1,0 +1,363 @@
+/*-----BOX-SIZING FIX------*/
+
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*-----GLOBAL RESETS------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset */
+
+
+/*-----Begin CUSTOM STYLES-----*/
+
+html, body {
+	height: 100%;
+}
+
+body {
+
+    font-family: sans-serif;
+    background-color: black;
+
+}
+
+a {
+	cursor: pointer;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+	height: 60px;
+	color: white;
+}
+
+.header-logo {
+	float: left;
+	margin: 10px 15px;
+
+}
+.restart-btn {
+	float: right;
+	width:150px;
+	height: 35px;
+	text-align: center;
+	border: 1px solid #555555;
+	padding: 10px;
+	margin: 12px 10px 10px;
+	color: #555555;
+}
+.restart-btn:hover {
+	color: #fc1a57;
+}
+
+.wrapper {
+	
+	padding: 0;
+	background: url(../images/quiz-bgr.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+
+
+.main {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro {
+	color: white;
+	margin: 150px 0;
+}
+
+.intro h1 {
+	font-size: 3.2em;
+	padding-bottom: 20px;
+	line-height: 1.1;
+}
+
+.intro p {
+	font-size: 1.2em;
+}
+
+.btn-start {
+	width: 250px;
+	height: 50px;
+	color: white;
+	padding-top: 8px;
+	font-size: 0.9em;
+	background-color: #fc1a57;
+	border: none;
+	margin-top: 40px;
+}
+
+.btn-start:hover {
+	border: 2px solid #fc1a57;
+	background-color: transparent;
+}
+
+.question-box {
+	width: 50%;
+	float: left;
+	margin: 50px 0 90px 0;
+	padding-top: 30px;
+
+}
+
+.logo {
+	background-color: white;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 10px 15px 30px;
+
+}
+
+.logo img {
+	width: 230px;
+	padding-top: 25px;
+}
+
+.progress {
+	color: #777b93;
+	height: 40px;
+	width: 100%;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.answer-box {
+	width: 35%;
+	float: left;
+	text-align: center;
+	margin: 50px 0 90px 0;
+	padding-top: 30px;
+
+
+}
+
+.score-box {
+	width: 50%;
+	float: left;
+	text-align: left;
+	font-size: 4em;
+	margin-top: 65px;
+	color: white;
+}
+
+.score {
+	color: #fc1a57;
+}
+
+.feedback {
+	width: 100%;
+	color: white;
+	height: 50px;
+	padding-top: 18px;
+	font-size: 1.3em;
+}
+
+.answers ul {
+	padding: 0;
+	margin: 0;
+}
+.answers ul li {
+	padding-top:12px;
+	height: 45px;
+	width: 100%;
+	color: #777b93;
+	border-top: 2px white solid;
+	cursor: pointer;
+	font-size: 1.3em;
+}
+
+.answers ul label {
+	display: inline;
+	z-index:90;
+	cursor: pointer;
+}
+
+.answers ul li:hover {
+	background-color: rgba(0,0,0,0.5);
+	color: #fc1a57;
+}
+
+.answers input[type="radio"] {
+    opacity:0.01;
+    z-index:100;
+}
+
+.answers input[type="radio"]:checked + label{
+    color: white;
+}
+
+.btn-next {
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	height: 50px;
+	padding-top: 5px;
+	font-size: 0.9em;
+	border: 2px white solid;
+	text-align: center;
+}
+
+.btn-next:hover {
+	background-color: #63698e;
+	color: white;
+	border: 2px #63698e solid;
+}
+
+.footer {
+	clear: both;
+	height: 50px;
+	background-color: black;
+	width: 100%;
+	color: #555555;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.push {
+	height: 50px; /* .push must be the same height as .footer */
+}
+/*---MOBILE---*/
+
+@media only screen and (max-width: 500px) {
+
+	body {
+		background: url(../images/quiz-bgr.jpg);
+		background-repeat: repeat;
+		background-size: cover;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	.question-box, .answer-box {
+		width: 100%;
+		margin: 2px 0;
+
+}
+	.intro {
+	padding: 30px;
+	margin: 30px 0;
+
+}
+.intro p {
+	line-height: 1.5;
+}
+
+	.answer-box {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 60px;
+	}
+	.feedback,
+	.btn-next,
+	.answers ul li {
+		height: 60px;
+	}
+
+	.feedback,
+	.answers ul li {
+		font-size: 1.5em;
+		padding-top: 15px;
+	}
+
+.restart-btn {
+	float: none;
+	text-align: center;
+	margin-top: 30px;
+	border: none;
+	font-size: 1.1em;
+	width: 200px;
+
+}
+
+	.intro h1 {
+	font-size: 2.5em;
+}
+	.header-logo {
+		float: none;
+		text-align: center;
+		padding-top: 10px;
+		margin: 0;
+}
+	.logo {
+		width: 300px;
+		height: 300px;
+		margin: 20px auto;
+		float: none;
+	}
+	.score-box {
+		text-align: center;
+		width: 100%;
+		padding: 0 20px;
+		margin-top: 0;
+	}
+
+	.wrapper {
+	background-color: transparent;
+}
